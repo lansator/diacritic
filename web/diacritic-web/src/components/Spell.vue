@@ -29,7 +29,7 @@ export default {
       console.log("request data: ")
       console.log(request_data)
       axios
-        .post('//localhost:5000/', {text: this.txt_to_ckeck}, {
+        .post('//10.8.0.2:5000/', {text: this.txt_to_ckeck}, {
           headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'
