@@ -4,8 +4,6 @@ channels:
 dependencies:
   - ca-certificates=2017.08.26
   - certifi=2018.1.18
-  - libcxx=4.0.1
-  - libcxxabi=4.0.1
   - libedit=3.1
   - libffi=3.2.1
   - ncurses=6.0
@@ -96,5 +94,4 @@ dependencies:
     - wcwidth==0.1.7
     - webencodings==0.5.1
     - werkzeug==0.14.1
-prefix: /Users/alexlfll/anaconda3/envs/diacritic
 
