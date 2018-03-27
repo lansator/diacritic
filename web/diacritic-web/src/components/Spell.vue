@@ -6,6 +6,8 @@
     <button @click="check_spelling">check</button>
     <div id="txt_destination">{{corrected_text}}
     </div>
+    <div id="info"><pre>{{word_info}}</pre>
+    </div>
   </div>
 </template>
 
@@ -17,7 +19,8 @@ export default {
   data () {
     return {
       corrected_text: '--',
-      txt_to_ckeck: ""
+      txt_to_ckeck: "",
+      word_info: ""
     }
   },
 
@@ -39,6 +42,7 @@ export default {
           console.log('POST request completed:')
           console.log(response.data)
           this.corrected_text = response.data.text
+          this.word_info = response.data.word_info
           // console.log("sound_file_id=" + response.data.file_id)
 
           // this.sound_file_id = response.data.file_id;
